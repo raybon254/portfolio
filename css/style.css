@@ -2,6 +2,9 @@
     padding: 0;
     margin: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color:  #000033;
     padding: 20px;
@@ -20,6 +23,7 @@ header{
     padding: 10px;
     display: flex;
     justify-content: space-between;
+    border-bottom: 2px solid black;
 }
 aside{
     grid-area: aside;
@@ -64,4 +68,30 @@ figcaption{
     display: flex;
     margin: 10px;
     padding-left: 50px;
+}
+section{
+    border-bottom: 2px solid black;
+    max-width: 1200px;
+    width: 90%;
+    min-height: 300px;
+    margin: 0 auto;
+    padding: 20px 20px;
+    margin-bottom: 20px;
+}
+section h2{
+    text-align: center;
+    padding-bottom: 10px;
+}
+section p{
+    font-size: 18px;
+}
+#init{
+    font-weight: bold;
+    font-size: 20px;
+}
+#enquiries{
+    padding-bottom: 5px;
+}
+em{
+    font-weight: bold;
 }
