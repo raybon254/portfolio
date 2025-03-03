@@ -130,15 +130,31 @@ em{
 @media screen and (max-width: 768px) {
     .container {
         grid-template-areas: 
-        "header"
-        "main"
-        "aside"
-        "footer";
-        grid-template-columns: 1fr;
+            "header"
+            "main"
+            "aside"
+            "footer";
+        grid-template-columns: 1fr; 
+    }
+
+    header {
+        flex-direction: column; 
+        text-align: center;
     }
 
     aside {
-        padding: 20px;
         height: auto; 
+        padding: 15px;
+    }
+
+    section {
+        width: 100%; 
+        padding: 10px;
+    }
+
+    #icons {
+        flex-direction: column;
+        text-align: center;
     }
 }
+
