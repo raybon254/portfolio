@@ -8,6 +8,7 @@ html{
 body{
     background-color:  #000033;
     padding: 20px;
+    color: #e0e0e0;
 }
 .container{
     display: grid;
@@ -23,11 +24,21 @@ header{
     padding: 10px;
     display: flex;
     justify-content: space-between;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #555555;
+    align-items: center;
+    background-color: #111144;
+    color: #ffffff;
+}
+.logo{
+   width: 30px;
+   height: auto;
 }
 aside{
     grid-area: aside;
     padding: 10px;
+    background-color: #111144;
+    color: #e0e0e0;
+    text-align: center;
 }
 main{
     grid-area: main;
@@ -37,21 +48,25 @@ footer{
     grid-area: footer;
     padding: 10px;
     text-align: center;
+    background-color: #111144;
+    color: #ffffff;
 }
 #bar a{
     text-decoration: none;
     padding: 5px;
     font-weight: bold;
+    color: #e0e0e0;
 }
 #bar a:hover{
     color: darkmagenta;
     border-radius: 5px;
-    border: 1px solid darkmagenta;
+    border: 1px solid #ff66cc;
 }
 #profile img{
     height: 300px;
     width: 300px;
     padding: 10px;
+    border: 2px solid #8888ff;
 }
 figcaption{
     text-align: center;
@@ -62,25 +77,35 @@ figcaption{
 }
 #icons{
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 #icons a{
     text-decoration: none;
     display: flex;
     margin: 10px;
-    padding-left: 50px;
+    padding-left: 2px;
+    color: #ffd700;
+}
+
+#icons i{
+    font-size: 24px;
 }
 section{
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #555555;
     max-width: 1200px;
     width: 90%;
     min-height: 300px;
     margin: 0 auto;
     padding: 20px 20px;
     margin-bottom: 20px;
+    background-color: #1a1a5e;
+    color: #e0e0e0;
 }
 section h2{
     text-align: center;
     padding-bottom: 10px;
+    color: #ffd700;
 }
 section p{
     font-size: 18px;
@@ -88,10 +113,27 @@ section p{
 #init{
     font-weight: bold;
     font-size: 20px;
+    color: #ffffff;
 }
 #enquiries{
     padding-bottom: 5px;
 }
 em{
     font-weight: bold;
+    color: #ff66cc;
+}
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-areas: 
+        "header"
+        "main"
+        "aside"
+        "footer";
+        grid-template-columns: 1fr;
+    }
+
+    aside {
+        padding: 20px;
+        height: auto; 
+    }
 }
