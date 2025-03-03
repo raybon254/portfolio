@@ -153,8 +153,9 @@ em{
     }
 
     #icons {
-        flex-direction: column;
+        flex-direction: row;
         text-align: center;
+        padding: 5px;
     }
 }
 
