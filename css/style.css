@@ -131,8 +131,8 @@ em{
     .container {
         grid-template-areas: 
             "header"
-            "main"
             "aside"
+            "main"
             "footer";
         grid-template-columns: 1fr; 
     }
