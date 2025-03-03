@@ -115,6 +115,52 @@ section p{
     border: 2px solid #ffffff;
     background-color: #555555;
 }
+form{
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    background-color: #ffffff;
+    margin: 0 auto;
+
+}
+.f1{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   margin-bottom: 10px;
+}
+input, select{
+    border-radius: 3px;
+    border: 2px solid lightgray;
+    width: 70%;
+    height: 25px;
+    padding: 3px;
+}
+label{
+    width: 30%;
+    padding-right: 10px;
+    text-align: right;
+    font-weight: bold;
+    color: cadetblue;
+}
+button{
+    display: block;
+    margin: 20px auto;
+    width: 120px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: lightblue;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover{
+    background-color: darkblue;
+    color: white;
+}
+
 #init{
     font-weight: bold;
     font-size: 20px;
@@ -155,6 +201,25 @@ em{
     #icons {
         flex-direction: column;
         text-align: center;
+    }
+
+    form{
+        width: 90%;
+    }
+    .f1{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    label{
+        width: 100%;
+        text-align: left;
+        padding-bottom: 5px;
+    }
+    input, select{
+        width: 100%;
+    }
+    button{
+        width: 100%;
     }
 }
 

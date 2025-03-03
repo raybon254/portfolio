@@ -30,7 +30,7 @@
                 <img src="./img/ray.jpg" alt="profile">
                 <figcaption>Delivering Excellence, One Line of Code at a Time.</figcaption>
             </figure>
-    
+            <a href="#hire" style="text-decoration: none;"><button id="hire1" type="hire">Hire me</button></a>
         </aside>
         <main>
             <div id="section">
@@ -69,6 +69,41 @@
                     <h2>Blog/Resume</h2>
                     <p><span id="init">W</span>elcome to my blog & resume section! Here, I share my insights on software development, best coding practices, and industry trends. My blog covers everything from beginner-friendly coding tutorials to deep dives into performance optimization, security, and emerging technologies.
                         In addition, my resume showcases my experience, technical skills, and achievements in software engineering. Whether you're a fellow developer, recruiter, or tech enthusiast, feel free to explore my journey and reach out if you’d like to collaborate!</p>
+                </section>
+
+                <section id="hire">
+                    <h2>Services</h2>
+                    <form action="#" id="submissionform">
+
+                        <div id="f1" class="f1">
+                            <label for="name" >NAME:</label>
+                            <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                        </div>
+                
+                        <div id="f1" class="f1">
+                            <label for="phone" >CONTACT:</label>
+                        <input type="tel" name="phone" id="phone" placeholder="123-456-7890" pattern="[0-9]{10}" required>
+                        </div>
+                
+                       <div id="f1" class="f1">
+                        <label for="email" >EMAIL:</label>
+                        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                       </div>
+                
+                        <div id="f1" class="f1">
+                            <label for="services">CHOOSE A SERVICE:</label>
+                        <select name="services" id="services" required>
+                            <option value="" disabled selected>select a service</option>
+                            <option value="webdev" id="web">WEB DEVELOPMENT</option>
+                            <option value="ui/ux" id="ui/ux">UX/UI DEVELOPMENT</option>
+                            <option value="app" id="appdev">APP DEVELOPMENT</option>
+                            <option value="api" id="api">API INTERGRATION</option>
+                            <option value="db" id="db">DB MANAGEMENT</option>
+                        </select>
+                        </div>
+                        <button id="submit" type="submit">SUBMIT</button>
+                        <div id="result"></div>
+                    </form>
                 </section>
 
                 <section id="contacts">
