@@ -110,6 +110,11 @@ section h2{
 section p{
     font-size: 18px;
 }
+#loading{
+    border-radius: 5px;
+    border: 2px solid #ffffff;
+    background-color: #555555;
+}
 #init{
     font-weight: bold;
     font-size: 20px;
