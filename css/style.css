@@ -143,7 +143,6 @@ em{
     }
 
     aside {
-        order: -1;
         height: auto; 
         padding: 15px;
     }
